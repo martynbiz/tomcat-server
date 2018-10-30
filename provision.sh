@@ -67,3 +67,5 @@ sudo systemctl enable tomcat
 # TODO see context.xml section on tutorial page
 
 # TODO sudo systemctl restart tomcat
+
+# TODO Step 8: Access the Web Interface
