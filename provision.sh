@@ -20,7 +20,8 @@ sudo apt-get install -y default-jdk
 # @see https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04
 
 sudo groupadd tomcat
-sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+# sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+sudo usermod -a -G tomcat vagrant
 curl -O http://mirror.vorboss.net/apache/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34.tar.gz
 sudo mkdir /opt/tomcat
 sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
